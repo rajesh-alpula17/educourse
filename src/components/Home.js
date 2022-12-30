@@ -5,25 +5,26 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import { axiosInstance, GET_BATCHES } from '../api';
+import { axiosInstance, GET_BATCHES , STUDENTS} from '../api';
 
 export default function Home() {
 
   const [coursesList, setCoursesList] = React.useState([]);
   React.useEffect(() => {
-    axiosInstance.get(GET_BATCHES, {})
+    axiosInstance.get(STUDENTS, {})
       .then((response) => {
         setCoursesList(response.data);
-        console.log('courses:' + coursesList);
+        
       })
       .catch((error) => {
-        console.log(error);
+        
       });
 
-  }, [])
+  },[])
   return (
     <>
       <div className="container">
+        <div className="float-end text-right"><a href="">Load More</a></div>
         {coursesList.map(batch => (
           <div className="card mb-3 col-md-8" key={batch.id}>
             <div className="row g-0">
