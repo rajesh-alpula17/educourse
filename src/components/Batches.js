@@ -12,7 +12,7 @@ function Batches() {
         <div className="btn-toolbar mb-2 mb-md-0">
           <div className="btn-group me-2">
             <Link to="/addbatch">
-              <button className="w-100 btn btn-primary btn-lg" type="button" rou>Add Batch</button>
+              <button className="w-100 btn btn-primary" type="button" rou>Add Batch</button>
             </Link>
           </div>
         </div>

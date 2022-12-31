@@ -77,7 +77,7 @@ const AddStudent = () => {
                         <Alert severity="error" onClose={() => { setError(false)}}>{errorMessage}</Alert>
                     }
                     <div className="col-md-7 col-lg-4">
-                        <h4 className="mb-3">Add Batch</h4>
+                        <h4 className="mb-3">Add Student</h4>
 
                         <form className="needs-validation" noValidate>
                             <div className="row g-3">
@@ -146,7 +146,7 @@ const AddStudent = () => {
                                     </div>
                                 </div>
                                 <div className="col-12 my-5">
-                                    <button className="w-100 btn btn-primary btn-lg" type="button" onClick={saveStudent}>Save</button>
+                                    <button className="w-100 btn btn-primary" type="button" onClick={saveStudent}>Save</button>
                                 </div>
                             </div>
                         </form>
