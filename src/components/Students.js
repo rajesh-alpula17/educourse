@@ -67,7 +67,7 @@ function Students() {
         <div className="btn-toolbar mb-2 mb-md-0">
           <div className="btn-group me-2">
             <Link to="/addstudent">
-              <button className="w-100 btn btn-primary" type="button" rou>Add Student</button>
+              <button className="w-100 btn btn-primary" type="button">Add Student</button>
             </Link>
           </div>
         </div>
