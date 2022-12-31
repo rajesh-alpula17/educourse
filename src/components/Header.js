@@ -3,27 +3,41 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <div className="container">
-            <nav className="navbar sticky-top navbar-expand-lg">
-                <div className="container-fluid">
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="/"><i className="bi bi-house-door-fill"></i> Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/students"><i className="bi bi-person-square"></i> Students</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/batches"><i className="bi bi-calendar-check-fill"></i> Batches</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/courses"><i className="bi bi-book-fill"></i> Courses</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <div>
+            <div class="d-flex flex-column flex-shrink-0 p-3">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <h2 class="fs-4">EduCourse</h2>
+                </a>
+                <hr/>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link link-dark">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link link-dark">
+                                Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link link-dark">
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link link-dark">
+                                Customers
+                            </a>
+                        </li>
+                    </ul>
+                
+            </div>
         </div>
     );
 }

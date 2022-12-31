@@ -1,8 +1,8 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  //baseURL: "https://api-educourse.vercel.app/",
-  baseURL: "http://localhost:5000/",
+  baseURL: "https://api-educourse.vercel.app/",
+  //baseURL: "http://localhost:5000/",
 });
 
 axiosInstance.interceptors.request.use(

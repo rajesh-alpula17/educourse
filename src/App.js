@@ -11,22 +11,29 @@ import Students from './components/Students';
 import Courses from './components/Courses';
 import Batches from './components/Batches';
 import AddStudent from './components/student/AddStudent';
+import AddBatch from './components/batches/AddBatch';
 
 function App() {
   return (
-    <BrowserRouter>      
-        <div className="App bg-info mb-3">
+    <BrowserRouter>   
+    <div className="row">   
+        <div className="App mb-3 col-sm-2 bg-light">
           <header className="container">
             <Header></Header>
           </header>          
         </div>
+        <div className='col-sm-10 mt-5'>
         <Routes>
                  <Route exact path='/' element={< Home />}></Route>
                  <Route exact path='/students' element={< Students />}></Route>
                  <Route exact path='/addstudent' element={< AddStudent />}></Route>
                  <Route exact path='/courses' element={< Courses />}></Route>
                  <Route exact path='/batches' element={< Batches />}></Route>
-          </Routes>      
+                 <Route exact path='/addbatch' element={< AddBatch />}></Route>
+          </Routes> 
+          </div>   
+
+          </div>  
     </BrowserRouter>
   );
 }

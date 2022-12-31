@@ -44,6 +44,7 @@ const AddStudent = () => {
                 //setCoursesList(response.data);
                 if(response.data === 'Duplicate found'){
                     setError(true);
+
                     setErrorTitle("Failed");
                     setErrorMessage(response?.data);
                     
@@ -76,7 +77,7 @@ const AddStudent = () => {
                         <Alert severity="error" onClose={() => { setError(false)}}>{errorMessage}</Alert>
                     }
                     <div className="col-md-7 col-lg-4">
-                        <h4 className="mb-3">Add Student</h4>
+                        <h4 className="mb-3">Add Batch</h4>
 
                         <form className="needs-validation" noValidate>
                             <div className="row g-3">
