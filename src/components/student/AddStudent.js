@@ -44,6 +44,7 @@ const AddStudent = () => {
                 //setCoursesList(response.data);
                 if(response.data === 'Duplicate found'){
                     setError(true);
+
                     setErrorTitle("Failed");
                     setErrorMessage(response?.data);
                     
@@ -145,7 +146,7 @@ const AddStudent = () => {
                                     </div>
                                 </div>
                                 <div className="col-12 my-5">
-                                    <button className="w-100 btn btn-primary btn-lg" type="button" onClick={saveStudent}>Save</button>
+                                    <button className="w-100 btn btn-primary" type="button" onClick={saveStudent}>Save</button>
                                 </div>
                             </div>
                         </form>
