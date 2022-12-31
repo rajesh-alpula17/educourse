@@ -72,29 +72,7 @@ function Students() {
           </div>
         </div>
       </div>
-      <div className="card mb-3 col-md-8">
-        {/*<div className="row g-0">
-          <div style={{ height: 800, width: '100%' }}>
-            <DataGrid
-              rows={studentsList}
-              columns={columns}
-              rowsPerPageOptions={[5]}
-              disableColumnFilter
-              disableColumnSelector
-              disableDensitySelector
-              getRowId={(row) => row._id}
-              components={{ Toolbar: GridToolbar }}
-              componentsProps={{
-                toolbar: {
-                  showQuickFilter: true,
-                  quickFilterProps: { debounceMs: 500 },
-
-                },
-
-              }}
-            />
-          </div>
-            </div>*/}
+      <div className="card mb-3 col-md-8">        
         <DataTable value={studentsList} responsiveLayout="scroll">
           <Column field="firstName" header="FirstName"></Column>
           <Column field="lastName" header="Last Name"></Column>

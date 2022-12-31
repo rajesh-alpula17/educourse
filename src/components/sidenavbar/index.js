@@ -6,10 +6,7 @@ const SideNavBar = () => {
     return (
         <div>
             <div className="d-flex flex-column flex-shrink-0 p-3">
-                {/*<a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                    <h2 className="fs-4">EduCourse</h2>
-                </a>
-    <hr />*/}
+                
                 <ul className="nav nav-pills flex-column mb-auto">
                     <li className="nav-item">
                         <a href="/" className="nav-link" aria-current="page">
@@ -27,7 +24,7 @@ const SideNavBar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="nav-link link-dark">
+                        <a href="/courses" className="nav-link link-dark">
                             Courses
                         </a>
                     </li>
